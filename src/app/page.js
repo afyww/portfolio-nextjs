@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen bg-gradient-to-b from-emerald-800 to-gray-900 flex-col">
       <Navbar />
-      <div class="md:max-w-5xl xl:max-w-7xl mx-auto p-3 space-y-5">
+      <div class="md:max-w-5xl xl:max-w-7xl 2xl:max-w-full mx-auto p-3 space-y-5">
         <Herosection />
         <Scrolldown />
         <Aboutsection />

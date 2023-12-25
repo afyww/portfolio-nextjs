@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Aboutsection = () => {
     return (
         <section id="about">
-            <div class=" grid grid-cols-1 h-fit md:h-screen xl:h-screen md:grid-cols-2 xl:grid-cols-2">
+            <div class=" grid grid-cols-1 h-screen md:grid-cols-2 xl:grid-cols-2">
                 <div class="my-auto">
                     <h1 class="text-6xl text-white font-extrabold">
                         About Me

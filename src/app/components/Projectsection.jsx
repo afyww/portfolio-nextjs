@@ -3,7 +3,7 @@ import React from 'react'
 const Projectsection = () => {
   return (
     <section id="project">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 h-fit md:h-screen xl:h-screen ">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 h-screen">
         <div class="my-auto">
             <h1 class="text-6xl text-white font-extrabold">
                 Projects
