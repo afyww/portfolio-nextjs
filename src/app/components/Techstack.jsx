@@ -7,7 +7,7 @@ const Techstack = () => {
                 <h1 className='text-white text-4xl font-bold'>Tech Stack That I Use </h1>
             </div>
 
-            <div className='flex space-x-2 xl:space-x-8 max-w-full xl:max-w-4xl mx-auto overflow-x-scroll bg-black'>
+            <div className='flex space-x-2 xl:space-x-8 max-w-full sm:max-w-full md:max-w-3xl xl:max-w-4xl 2xl:w-full mx-auto overflow-x-scroll bg-black p-2 xl:p-5'>
                 <div className='relative inline-block text-center bg-black rounded-xl p-3 space-y-2'>
                     <svg className='mx-auto' width="60" height="50" viewBox="0 0 90 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.92813 90.034L0.906738 0H89.0934L81.072 89.9854L44.9272 100" fill="#E44D26" />

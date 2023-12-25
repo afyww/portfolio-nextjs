@@ -6,6 +6,7 @@ import Projectsection from "./components/Projectsection";
 import Footersection from "./components/Footersection";
 import Scrolldown from "./components/Scrolldown";
 import Techstack from "./components/Techstack";
+import Expsection from "./components/Expsection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Herosection />
         <Scrolldown />
         <Aboutsection />
+        <Expsection />
         <Projectsection />
         <Techstack />
         <Contactsection />

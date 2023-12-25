@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 
@@ -20,10 +21,10 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div class=" hidden items-center md:flex xl:flex text-white">
-                            <a href="#home" class="px-5 text-xl font-light hover:text-black hover:underline">Home</a>
-                            <a href="#about" class="px-5 text-xl font-light hover:text-black hover:underline">About</a>
-                            <a href="#project" class="px-5 text-xl font-light hover:text-black hover:underline">Projects</a>
-                            <a href="#contact" class="px-5 text-xl font-light hover:text-black hover:underline">Contact</a>
+                            <Link href="#home" class="px-5 text-xl font-light hover:text-black hover:underline">Home</Link>
+                            <Link href="#about" class="px-5 text-xl font-light hover:text-black hover:underline">About</Link>
+                            <Link href="#project" class="px-5 text-xl font-light hover:text-black hover:underline">Projects</Link>
+                            <Link href="#contact" class="px-5 text-xl font-light hover:text-black hover:underline">Contact</Link>
                         </div>
                         <div class="md:hidden flex items-center">
                             <button class="mobile-menu-button" onClick={toggleMobileMenu}>
@@ -38,10 +39,10 @@ const Navbar = () => {
                 </div>
 
                 <div className={`mobile-menu md:hidden xl:hidden text-white ${isMobileMenuOpen ? '' : 'hidden'}`}>
-                    <a href="#home" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">Home</a>
-                    <a href="#about" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">About</a>
-                    <a href="#project" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">Projects</a>
-                    <a href="#contact" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">Contact</a>
+                    <Link href="#home" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">Home</Link>
+                    <Link href="#about" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">About</Link>
+                    <Link href="#project" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">Projects</Link>
+                    <Link href="#contact" class="block py-3 px-5 text-sm hover:bg-black rounded-xl">Contact</Link>
                 </div>
             </nav>
         </section>

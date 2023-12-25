@@ -11,7 +11,7 @@ const Aboutsection = () => {
                         About Me
                     </h1>
                 </div>
-                <div class="space-y-4 mx-auto">
+                <div class="space-y-4 mx-auto my-auto">
                     <div class="text-white justify-center text-sm space-y-2">
                         <svg className='mx-auto' width="200" height="400" viewBox="0 0 98 153" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M89.84 99.55H59.11V148.31H89.84V99.55Z" fill="#B2B2B2" />
