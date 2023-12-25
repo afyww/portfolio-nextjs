@@ -5,14 +5,14 @@ import Link from 'next/link';
 
 const Scrolldown = () => {
     return (
-        <div className='h-fit'>
-            <div className='hidden xl:flex justify-center space-y-2'>
-            <Link className='text-2xl font-extrabold' href="#about">Scroll Down
-            <svg className='mx-auto' width="80" height="100" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.2187 0.181824H14.4176V29.2102L3.31959 18.1122L0.0326538 21.4361L16.8182 38.2216L33.6406 21.4361L30.2798 18.1122L19.2187 29.2102V0.181824Z" fill="#181717" />
+        
+        <div className='h-fit flex justify-center'>
+            <Link href="#about">
+            <svg className='mx-auto w-32 h-32' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 15L20 25L30 15" stroke="#E3E4E6" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             </Link>
-            </div>
+
         </div>
     )
 }
