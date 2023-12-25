@@ -7,16 +7,16 @@ const Footersection = () => {
             <div className="space-y-5">
                 <div class=" grid grid-cols-4">
                     <div class="col-span-2 xl:col-span-3 md:col-span-3 2xl:col-span-3">
-                        <a href="/" class="text-white">
+                        <Link href="/" class="text-white">
                             <span class="font-extrabold text-2xl xl:text-3xl">
                                 <span class="text-black">CODE</span>FY.
                             </span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-span-2 xl:col-span-1 md:col-span-1 2xl:col-span-1 flex justify-between text-white text-xs xl:text-base 2xl:text-base">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Contact</a>
+                        <Link href="#home">Home</Link>
+                        <Link href="#about">About</Link>
+                        <Link href="#contact">Contact</Link>
                     </div>
                 </div>
 
