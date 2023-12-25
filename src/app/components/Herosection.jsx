@@ -4,9 +4,9 @@ const Herosection = () => {
   return (
     <section id="home">
         <div class="grid grid-cols-1 h-fit md:grid-cols-2 xl:grid-cols-3 2xl:grid-col-3">
-            <div class="my-0 md:my-auto xl:my-auto">
-                <h1 class="text-5xl text-white font-extrabold">Hi.Im <span class="text-black">Afy
-                        Wahyu</span></h1>
+            <div class="my-0 md:my-auto xl:my-auto space-y-2">
+                <h1 class="text-5xl text-white font-extrabold">Hi.Im</h1>    
+                <h1 class="text-5xl text-black font-extrabold">Afy Wahyu</h1>
                 <div class="my-2">
                     <h1 class="text-3xl text-white font-bold font-['QuattrocentoSans']">Full Stack Web Developer
                     </h1>
