@@ -15,7 +15,7 @@ const Herosection = () => {
                             class="text-red-600">Indonesia</span></h1>
                 </div>
             </div>
-            <div class="order-first md:order-first md:col-span-2 xl:col-span-1 xl:order-none my-auto">
+            <div class="order-first md:order-first md:col-span-1 xl:col-span-1 xl:order-none my-auto">
                 <svg className='w-full h-full'  viewBox="0 0 511 594" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_i_4_241)">
