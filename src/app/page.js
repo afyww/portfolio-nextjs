@@ -15,8 +15,8 @@ export default function Home() {
         <Herosection />
         <Scrolldown />
         <Aboutsection />
-        <Techstack />
         <Projectsection />
+        <Techstack />
         <Contactsection />
       </div>
       <div>
