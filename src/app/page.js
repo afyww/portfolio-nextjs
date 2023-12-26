@@ -10,7 +10,7 @@ import Expsection from "./components/Expsection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-gradient-to-b from-emerald-800 to-gray-900 flex-col">
+    <main className="flex min-h-screen bg-gradient-to-b from-gray-700 to-gray-900 flex-col">
       <Navbar />
       <div class="md:max-w-5xl xl:max-w-7xl 2xl:max-w-full mx-auto p-3 space-y-5">
         <Herosection />

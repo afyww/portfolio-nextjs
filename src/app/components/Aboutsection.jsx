@@ -6,8 +6,8 @@ const Aboutsection = () => {
         <section id="about">
             <div class=" grid grid-cols-1 h-screen md:h-full xl:h-screen 2xl:h-screen md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
                 <div class="my-auto">
-                    <h1 class="text-6xl text-white font-extrabold">
-                        About Me
+                    <h1 class="text-6xl text-center text-white font-extrabold">
+                        About 
                     </h1>
                 </div>
                 <div class="space-y-4 mx-auto my-auto">
@@ -47,7 +47,6 @@ const Aboutsection = () => {
                         </svg>
 
                     </div>
-                    <h1 class="text-4xl font-extrabold text-black">Afy Wahyu Wibowo</h1>
                     <div class="text-white justify-center text-sm space-y-2">
                         <p>👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me chamar apenas de Henrique.
                             Prazer!</p>

@@ -6,12 +6,12 @@ const Herosection = () => {
     <section id="home">
         <div class="grid grid-cols-1 h-screen md:grid-cols-2 xl:grid-cols-3 2xl:grid-col-3">
             <div class="my-0 md:my-auto xl:my-auto space-y-2">
-                <h1 class="text-5xl text-white font-extrabold">Hi.Im</h1>    
-                <h1 class="text-5xl text-black font-extrabold">Afy Wahyu</h1>
+                <h1 class="text-5xl xl:text-left text-center text-white font-extrabold">Hi.Im</h1>    
+                <h1 class="text-5xl xl:text-left text-center text-black font-extrabold">Afy Wahyu</h1>
                 <div class="my-2">
-                    <h1 class="text-3xl text-white font-bold font-['QuattrocentoSans']">Full Stack Web Developer
+                    <h1 class="text-3xl xl:text-left text-center text-white font-bold font-['QuattrocentoSans']">Full Stack Web Developer
                     </h1>
-                    <h1 class="text-3xl text-black font-bold font-['QuattrocentoSans']"> Based In <span
+                    <h1 class="text-3xl xl:text-left text-center text-black font-bold font-['QuattrocentoSans']"> Based In <span
                             class="text-red-600">Indonesia</span></h1>
                 </div>
             </div>
@@ -85,7 +85,7 @@ const Herosection = () => {
                 </svg>
             </div>
             <div class="ml-0 md:ml-32 xl:ml-32 my-auto space-y-4">
-                <div class="flex">
+                <div class="flex justify-center">
                     <Link href="https://www.linkedin.com/in/afywahyu/" class="pr-4">
                         <svg class="w-12 h-12" width="4" height="48" viewBox="0 0 48 48" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,7 @@ const Herosection = () => {
                         </svg>
                     </Link>
                 </div>
-                <div class="relative inline-block space-y-2">
+                <div class="relative xl:inline-block space-y-2">
                     <button class="bg-black text-white w-full p-3 font-semibold hover:shadow-blue-500/50 shadow-2xl delay-200">Download
                         Cv
                     </button>

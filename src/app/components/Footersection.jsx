@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Footersection = () => {
     return (
-        <footer class="h-fit w-4/5 border-t-2 mx-auto p-2 xl:p-10">
+        <footer class="h-fit w-full border-t-2 mx-auto p-2 xl:p-10">
             <div className="space-y-5">
                 <div class=" grid grid-cols-4">
                     <div class="col-span-2 xl:col-span-3 md:col-span-3 2xl:col-span-3">

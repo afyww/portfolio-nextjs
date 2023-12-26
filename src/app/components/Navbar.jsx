@@ -11,7 +11,7 @@ const Navbar = () => {
     };
     return (
         <section>
-            <nav class="w-4/5 my-8 mx-auto shadow-xl">
+            <nav class="fixed top-0 right-20 left-20 mx-auto shadow-xl">
                 <div class="mx-auto px-4">
                     <div class="flex justify-between">
                         <div>
