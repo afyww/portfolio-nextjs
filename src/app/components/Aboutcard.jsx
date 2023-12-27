@@ -3,7 +3,7 @@ import React from 'react'
 const Aboutcard = () => {
   return (
     <div class="space-y-4 xl:mx-auto xl:my-auto">
-    <div class="text-white justify-center text-sm space-y-2 p-10 bg-gray-700">
+    <div class="text-white justify-center text-sm space-y-2 p-8 bg-gray-700">
         <h1 className='font-semibold text-2xl'>My Skills</h1>
         <p className='font-light'>
             I am a full stack web developer with a passion for creating interactive
