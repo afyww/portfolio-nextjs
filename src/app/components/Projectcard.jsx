@@ -11,7 +11,7 @@ const Projectcard = () => {
           <li className='text-white rounded-sm p-2 border'>Mobile</li>
         </ul>
       </div>
-      <div class=" grid grid-cols-2 gap-8 overflow-y-scroll h-96 text-white p-5 bg-gray-700">
+      <div class=" grid grid-cols-2 gap-8 overflow-y-scroll h-96 text-white p-8 bg-gray-700">
         <div className='space-y-3 rounded-sm'>
           <Image className='rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
           <h1 className='font-semibold text-2xl'>Information System</h1>
