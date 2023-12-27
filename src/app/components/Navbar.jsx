@@ -16,7 +16,7 @@ const Navbar = () => {
                     <div class="flex justify-between">
                         <div>
                             <a href="/" class="flex items-center py-4 px-3 text-white">
-                                <span class="font-extrabold text-3xl"><span
+                                <span class="font-extrabold text-4xl"><span
                                     class="text-black">CODE</span>FY.</span>
                             </a>
                         </div>
