@@ -1,6 +1,7 @@
+"use client";
 import Link from 'next/link'
 import React from 'react'
-
+import TypewriterComponent from 'typewriter-effect'
 const Herosection = () => {
   return (
     <section id="home">
@@ -9,13 +10,25 @@ const Herosection = () => {
                 <h1 class="text-5xl xl:text-left text-center text-white font-extrabold">Hi.Im</h1>    
                 <h1 class="text-5xl xl:text-left text-center text-black font-extrabold">Afy Wahyu</h1>
                 <div class="my-2">
-                    <h1 class="text-3xl xl:text-left text-center text-white font-bold font-['QuattrocentoSans']">Full Stack Web Developer
+                    <h1 class="text-5xl xl:text-left text-center text-white font-bold font-['QuattrocentoSans']">
+                        <TypewriterComponent
+                        options={{ 
+                            strings: [
+                                "A Laravel Developer",
+                                "A Next Js Developer",
+                                "A Full Stack Web Developer",
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            delay: 50,
+                         }}
+                        />
                     </h1>
                     <h1 class="text-3xl xl:text-left text-center text-black font-bold font-['QuattrocentoSans']"> Based In <span
                             class="text-red-600">Indonesia</span></h1>
                 </div>
             </div>
-            <div class="order-first md:order-first md:col-span-1 xl:col-span-1 xl:order-none my-auto">
+            <div class="order-first mx-auto xl:mx-0 md:mx-0 2xl:mx-0 md:order-first md:col-span-1 xl:col-span-1 xl:order-none my-auto">
                 <svg className='w-full h-full'  viewBox="0 0 511 594" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_i_4_241)">
