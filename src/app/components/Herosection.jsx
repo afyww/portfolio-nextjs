@@ -2,13 +2,22 @@
 import Link from 'next/link'
 import React from 'react'
 import TypewriterComponent from 'typewriter-effect'
+import { motion } from 'framer-motion';
+
 const Herosection = () => {
     return (
         <section id="home">
             <div class="grid grid-cols-1 h-screen md:grid-cols-2 xl:grid-cols-3 2xl:grid-col-3">
                 <div class="my-0 md:my-auto xl:my-auto space-y-2">
-                    <h1 class="text-5xl xl:text-left text-center text-white font-extrabold">Hi.Im</h1>
-                    <h1 class="text-5xl xl:text-left text-center text-black font-extrabold">Afy Wahyu</h1>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 1 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2.0 }}
+                    >
+                        <h1 class="text-5xl xl:text-left text-center text-white font-extrabold">Hi.Im</h1>
+                        <h1 class="text-5xl xl:text-left text-center text-black font-extrabold">Afy Wahyu</h1>
+                    </motion.div>
+
                     <div class="my-2">
                         <h1 class="text-5xl xl:text-left text-center text-white font-bold font-['QuattrocentoSans']">
                             <TypewriterComponent
@@ -24,11 +33,22 @@ const Herosection = () => {
                                 }}
                             />
                         </h1>
-                        <h1 class="text-3xl xl:text-left text-center text-black font-bold font-['QuattrocentoSans']"> Based In <span
-                            class="text-red-600">Indonesia</span></h1>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 1 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 2.0 }}
+                        >
+                            <h1 class="text-3xl xl:text-left text-center text-black font-bold font-['QuattrocentoSans']"> Based In <span
+                                class="text-red-600">Indonesia</span></h1>
+                        </motion.div>
                     </div>
                 </div>
                 <div class="order-first mx-auto xl:mx-0 md:mx-0 2xl:mx-0 md:order-first md:col-span-1 xl:col-span-1 xl:order-none my-auto">
+                <motion.div
+                            initial={{ opacity: 0, scale: 1 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 2.0 }}
+                        >
                     <svg className='w-full h-full' viewBox="0 0 511 594" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_i_4_241)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M187.688 349.726C231.358 369.154 280.327 366.996 318.696 349.725V392.286L319.129 392.276V417.265H187.688V349.726Z" fill="#BB7D52" />
@@ -59,9 +79,14 @@ const Herosection = () => {
                             </filter>
                         </defs>
                     </svg>
-
+                </motion.div>
                 </div>
                 <div class="ml-0 md:ml-32 xl:ml-32 my-auto space-y-4">
+                <motion.div
+                            initial={{ opacity: 0, scale: 1 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 2.0 }}
+                        >
                     <div class="flex justify-center">
                         <Link href="https://www.linkedin.com/in/afywahyu/" class="pr-4">
                             <svg class="w-12 h-12" width="4" height="48" viewBox="0 0 48 48" fill="none"
@@ -99,6 +124,7 @@ const Herosection = () => {
                             <Link href="http://wa.me/6287733839260">Contact Me</Link>
                         </button>
                     </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

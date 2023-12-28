@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const Projectcard = () => {
   return (
@@ -14,61 +15,103 @@ const Projectcard = () => {
       </div>
       <div class="grid xl:grid-cols-2 gap-8 overflow-y-scroll h-96 text-white p-8 bg-gray-700">
         <div className='space-y-3 rounded-sm'>
-          <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
-          <h1 className='font-semibold text-2xl'>Information System</h1>
-          <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
-            Kota Semarang .Feature see the graph of work letter and employee CRUD .Build with laravel,tailwind and mysql .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .
-          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.0 }}
+          >
+            <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
+            <h1 className='font-semibold text-2xl'>Information System</h1>
+            <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
+              Kota Semarang .Feature see the graph of work letter and employee CRUD .Build with laravel,tailwind and mysql .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .
+            </p>
+          </motion.div>
         </div>
         <div className='space-y-3 rounded-sm'>
-          <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Portfolio.png" width={300} height={300} alt='' />
-          <h1 className='font-semibold text-2xl'>Portfolio Website</h1>
-          <p className='text-left font-light line-clamp-2 max-w-xs'>Portfolio website include animations .Build with nextjs,tailwind and npm library .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .
-          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.0 }}
+          >
+            <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Portfolio.png" width={300} height={300} alt='' />
+            <h1 className='font-semibold text-2xl'>Portfolio Website</h1>
+            <p className='text-left font-light line-clamp-2 max-w-xs'>Portfolio website include animations .Build with nextjs,tailwind and npm library .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .
+            </p>
+          </motion.div>
         </div>
         <div className='space-y-3 rounded-sm'>
-          <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
-          <h1 className='font-semibold text-2xl'>Information System</h1>
-          <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .
-          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.0 }}
+          >
+            <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
+            <h1 className='font-semibold text-2xl'>Information System</h1>
+            <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .
+            </p>
+          </motion.div>
         </div>
         <div className='space-y-3 rounded-sm'>
-          <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
-          <h1 className='font-semibold text-2xl'>Information System</h1>
-          <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .
-          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.0 }}
+          >
+            <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
+            <h1 className='font-semibold text-2xl'>Information System</h1>
+            <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .
+            </p>
+          </motion.div>
         </div>
         <div className='space-y-3 rounded-sm'>
-          <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
-          <h1 className='font-semibold text-2xl'>Information System</h1>
-          <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .
-          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.0 }}
+          >
+            <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
+            <h1 className='font-semibold text-2xl'>Information System</h1>
+            <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .
+            </p>
+          </motion.div>
         </div>
         <div className='space-y-3 rounded-sm'>
-          <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
-          <h1 className='font-semibold text-2xl'>Information System</h1>
-          <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .Information system work letter for Dinas Kesehatan
-            Kota Semarang .
-          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2.0 }}
+          >
+            <Image className='transition-transform ease-linear duration-300 transform hover:scale-110 rounded-sm' src="/images/Dinkes-Project.png" width={300} height={300} alt='' />
+            <h1 className='font-semibold text-2xl'>Information System</h1>
+            <p className='text-left font-light line-clamp-2 max-w-xs'>Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .Information system work letter for Dinas Kesehatan
+              Kota Semarang .
+            </p>
+          </motion.div>
         </div>
       </div>
     </div>)
