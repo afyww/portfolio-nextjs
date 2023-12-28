@@ -16,6 +16,7 @@ const Footersection = () => {
                     <div className="col-span-2 xl:col-span-1 md:col-span-1 2xl:col-span-1 flex justify-between text-white text-xs xl:text-base 2xl:text-base">
                         <Link href="#home">Home</Link>
                         <Link href="#about">About</Link>
+                        <Link href="#project">Projects</Link>
                         <Link href="#contact">Contact</Link>
                     </div>
                 </div>

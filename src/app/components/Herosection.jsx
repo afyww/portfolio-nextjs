@@ -96,7 +96,7 @@ const Herosection = () => {
                             Cv
                         </button>
                         <button class="bg-green-600 w-full p-3 font-semibold hover:shadow-green-500/50 shadow-2xl delay-200">
-                            <Link href="http://wa.me/6287733839260">Hubungi Saya</Link>
+                            <Link href="http://wa.me/6287733839260">Contact Me</Link>
                         </button>
                     </div>
                 </div>

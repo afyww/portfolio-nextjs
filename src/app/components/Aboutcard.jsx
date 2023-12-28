@@ -5,9 +5,15 @@ const Aboutcard = () => {
     <div class="space-y-4 xl:mx-auto xl:my-auto">
       <div>
         <ul className='flex justify-center space-x-8'>
-          <li className='text-white rounded-sm p-2 border'>Skills</li>
-          <li className='text-white rounded-sm p-2 border'>Education</li>
-          <li className='text-white rounded-sm p-2 border'>Certificate</li>
+          <li className='text-white rounded-sm p-2 border'>
+          <a className='hover:underline hover:text-black' href="">Skills</a>      
+          </li>
+          <li className='text-white rounded-sm p-2 border'>
+            <a className='hover:underline hover:text-black' href="">Educations</a>
+          </li>
+          <li className='text-white rounded-sm p-2 border'>
+            <a className='hover:underline hover:text-black' href="">Certificate</a>
+          </li>
         </ul>
       </div>
 
