@@ -1,3 +1,4 @@
+"use client";
 import Contactsection from "./components/Contactsection";
 import Aboutsection from "./components/Aboutsection";
 import Herosection from "./components/Herosection";
@@ -7,23 +8,57 @@ import Footersection from "./components/Footersection";
 import Scrolldown from "./components/Scrolldown";
 import Techstack from "./components/Techstack";
 import Expsection from "./components/Expsection";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen bg-gradient-to-b from-gray-700 to-gray-900 flex-col">
       <Navbar />
       <div class="max-w-full sm:max-w-full md:max-w-2xl xl:max-w-7xl 2xl:w-full mx-auto p-3 space-y-5">
-        <Herosection />
+        <motion.div
+          initial={{ opacity: 0, scale:0.5 }}
+          whileInView={{ opacity: 1, scale:1 }}
+          transition={{ 
+            duration: 0.5, 
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01] }}>
+          <Herosection />
+        </motion.div>
         <Scrolldown />
-        <Aboutsection />
-        <Expsection />
-        <Projectsection />
-        <Techstack />
-        <Contactsection />
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}>
+          <Aboutsection />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}>
+          <Expsection />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}>
+          <Projectsection />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}>
+          <Techstack />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}>
+          <Contactsection />
+        </motion.div>
       </div>
       <div>
         <Footersection />
       </div>
     </main>
-  )
+  );
 }

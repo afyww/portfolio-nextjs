@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion';
 
 const Aboutcard = () => {
   return (
@@ -19,11 +18,7 @@ const Aboutcard = () => {
       </div>
 
       <div class="text-white justify-center text-sm space-y-2 p-8 bg-gray-700">
-      <motion.div
-                        initial={{ opacity: 0, scale: 1 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 2.0 }}
-                    >
+    
         <h1 className='font-semibold text-2xl'>My Skills</h1>
         <p className='font-light'>
           I am a full stack web developer with a passion for creating interactive
@@ -34,7 +29,6 @@ const Aboutcard = () => {
           I am a full stack web developer with a passion for creating interactive
           and responsive web applications. I have experience working with JavaScript,
           React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git.</p>
-        </motion.div>
       </div>
     </div>)
 }

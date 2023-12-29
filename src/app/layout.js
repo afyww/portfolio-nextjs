@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 import './globals.css'
 
+
 const poppins = Poppins({ 
   subsets: ['devanagari'],
   weight: ['200', '400', '600', '800']
@@ -14,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className='scroll-smooth' lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        </body>
     </html>
   )
 }
