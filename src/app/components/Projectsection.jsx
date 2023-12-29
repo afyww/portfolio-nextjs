@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import Projectcard from './Projectcard'
 import TypewriterComponent from 'typewriter-effect';

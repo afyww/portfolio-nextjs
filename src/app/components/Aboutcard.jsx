@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Aboutcard = () => {
@@ -6,20 +7,20 @@ const Aboutcard = () => {
       <div>
         <ul className='flex justify-center space-x-8'>
           <li className='text-white rounded-sm p-2 border'>
-          <a className='hover:underline hover:text-black' href="">Skills</a>      
+          <Link className='hover:underline hover:text-black' href="#skill">Skills</Link>      
           </li>
           <li className='text-white rounded-sm p-2 border'>
-            <a className='hover:underline hover:text-black' href="">Educations</a>
+            <Link className='hover:underline hover:text-black' href="#education">Educations</Link>
           </li>
           <li className='text-white rounded-sm p-2 border'>
-            <a className='hover:underline hover:text-black' href="">Certificate</a>
+            <Link className='hover:underline hover:text-black' href="">Certificate</Link>
           </li>
         </ul>
       </div>
-
+      <section id='skill'>
       <div class="text-white justify-center text-sm space-y-2 p-8 bg-gray-700">
-    
-        <h1 className='font-semibold text-2xl'>My Skills</h1>
+        <div>      
+           <h1 className='font-semibold text-2xl'>My Skills</h1>
         <p className='font-light'>
           I am a full stack web developer with a passion for creating interactive
           and responsive web applications. I have experience working with JavaScript,
@@ -29,7 +30,9 @@ const Aboutcard = () => {
           I am a full stack web developer with a passion for creating interactive
           and responsive web applications. I have experience working with JavaScript,
           React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git.</p>
+          </div>
       </div>
+      </section>
     </div>)
 }
 
