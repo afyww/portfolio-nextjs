@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const commonMotionProps = {
   initial: { opacity: 0, y: 10 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 2.0, ease: "easeInOut" },
+  transition: { duration: 1.0, ease: "easeInOut" },
 };
 
 export default function Home() {
