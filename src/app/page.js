@@ -16,43 +16,40 @@ export default function Home() {
       <Navbar />
       <div class="max-w-full sm:max-w-full md:max-w-2xl xl:max-w-7xl 2xl:w-full mx-auto p-3 space-y-5">
         <motion.div
-          initial={{ opacity: 0, scale:0.5 }}
-          whileInView={{ opacity: 1, scale:1 }}
-          transition={{ 
-            duration: 0.5, 
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01] }}>
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3 }}>
           <Herosection />
         </motion.div>
         <Scrolldown />
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Aboutsection />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Expsection />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Projectsection />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Techstack />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Contactsection />
         </motion.div>
       </div>
