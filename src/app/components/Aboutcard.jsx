@@ -13,12 +13,9 @@ const Aboutcard = () => {
       <div>
         <ul className="flex justify-center space-x-8">
           {sections.map((section, index) => (
-            <li
-              key={section}
-              className={`text-white rounded-sm p-2 border cursor-pointer ${index === activeIndex ? 'bg-gray-500' : ''
-                }`}
-              onClick={() => handleSetActiveIndex(index)}
-            >
+            <li key={section}
+              className={`text-white rounded-sm p-2 border cursor-pointer ${index === activeIndex ? 'bg-gray-500' : ''}`}
+              onClick={() => handleSetActiveIndex(index)}>
               <a className="hover:underline hover:text-black">
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
