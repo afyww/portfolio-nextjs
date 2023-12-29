@@ -18,38 +18,38 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Herosection />
         </motion.div>
         <Scrolldown />
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Aboutsection />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Expsection />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Projectsection />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Techstack />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}>
+          transition={{ duration: 3 }}>
           <Contactsection />
         </motion.div>
       </div>
