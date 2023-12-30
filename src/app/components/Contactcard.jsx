@@ -61,20 +61,20 @@ const Contactcard = () => {
                         <div class="space-y-2">
 
                             <label class="text-white font-light">Your Name</label>
-                            <input type="text" class="rounded-xl w-full py-2 bg-gray-600 px-2"
+                            <input type="text" name="name" value={formData.name} onChange={handleChange} class="rounded-xl w-full py-2 bg-gray-600 px-2"
                                 placeholder="Name" />
                         </div>
                         <div class="space-y-2">
 
                             <label class="text-white font-light">Your Email</label>
-                            <input type="email" class="rounded-xl w-full py-2 bg-gray-600 px-2"
+                            <input type="email" name="email" value={formData.email} onChange={handleChange} class="rounded-xl w-full py-2 bg-gray-600 px-2"
                                 placeholder="Email" />
                         </div>
                     </div>
                     <div class="space-y-2">
 
                         <label class="text-white font-light">Your Message</label>
-                        <textarea name="textarea" cols="40" rows="12" placeholder="Write your message..."
+                        <textarea name="message" value={formData.message} onChange={handleChange}  cols="40" rows="12" placeholder="Write your message..."
                             class="w-full rounded-xl py-2 px-2 bg-gray-600 "></textarea>
                     </div>
                     <div class="">
