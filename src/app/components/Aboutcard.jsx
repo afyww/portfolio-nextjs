@@ -35,7 +35,7 @@ const Aboutcard = () => {
               key={section}
               className="w-full flex-shrink-0"
             >
-              <div className="text-white justify-center text-sm space-y-2 p-8 bg-gray-700">
+              <div className="text-white justify-center text-sm space-y-2 p-8 bg-gray-600">
                 <div>
                   <h1 className="font-semibold text-2xl">
                     {section.charAt(0).toUpperCase() + section.slice(1)}

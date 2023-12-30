@@ -67,7 +67,7 @@ const ProjectCardList = () => {
       <div className="flex justify-center space-x-8">
         <p className="text-white rounded-sm p-2 border">My Recent Works</p>
       </div>
-      <div className="grid xl:grid-cols-2 gap-8 overflow-y-scroll h-96 text-white p-8 bg-gray-700">
+      <div className="grid xl:grid-cols-2 gap-8 overflow-y-scroll h-96 text-white p-8 bg-gray-600">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
