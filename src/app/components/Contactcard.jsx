@@ -20,7 +20,17 @@ const ContactCard = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
+        // Validate form data
+        if (!formData.name || !formData.email || !formData.message) {
+            setNotification({
+                show: true,
+                type: 'error',
+                message: 'Please fill in all required fields',
+            });
+            return;
+        }
+    
         try {
             const response = await fetch('/api/sendEmail', {
                 method: 'POST',
@@ -29,7 +39,7 @@ const ContactCard = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             if (response.ok) {
                 setNotification({
                     show: true,
@@ -49,9 +59,10 @@ const ContactCard = () => {
                 type: 'error',
                 message: 'Error sending email',
             });
-            console.error('Error sending email:', error.message);
+            console.error('Error sending email:', error);
         }
     };
+    
 
     return (
         <div>
