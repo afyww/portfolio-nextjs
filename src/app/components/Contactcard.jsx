@@ -99,7 +99,7 @@ const ContactCard = () => {
                     <div>
                         <button
                             type="submit"
-                            className="bg-green-500 text-white w-full p-3 hover:bg-green-700 shadow-2xl"
+                            className="bg-green-500 text-black w-full p-3 hover:bg-green-700"
                         >
                             Send Message on WhatsApp
                         </button>

@@ -15,7 +15,7 @@ const Learnmorebtn = ({ title, description, technologies }) => {
   return (
     <div>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-light py-2 px-4 rounded-sm"
+        className="bg-blue-500 hover:bg-blue-700 text-black font-light py-2 px-4 rounded-sm"
         onClick={openModal}
       >
         Learn More
@@ -28,7 +28,7 @@ const Learnmorebtn = ({ title, description, technologies }) => {
       <p className="text-emerald-600">{technologies}</p>
       <p className="text-left font-light">{description}</p>
             <button
-              className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-light py-2 px-4 rounded-sm"
+              className="mt-4 bg-blue-500 hover:bg-blue-700 text-black font-light py-2 px-4 rounded-sm"
               onClick={closeModal}
             >
               Close
