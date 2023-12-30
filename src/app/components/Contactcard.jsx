@@ -32,7 +32,7 @@ const ContactCard = () => {
 
         // Construct the WhatsApp link
         const phone_number = '6285786946323'; // Update with the correct phone number
-        const whatsappMessage = `Name: ${formData.name}%0AMessage: ${formData.message}`;
+        const whatsappMessage = `Name: ${formData.name}Message: ${formData.message}`;
         const encodedMessage = encodeURIComponent(whatsappMessage);
         const whatsappLink = `https://wa.me/${phone_number}?text=${encodedMessage}`;
 
