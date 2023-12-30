@@ -8,12 +8,17 @@ export default async function handler(req, res) {
 
   const { name, email, message } = req.body;
 
+  // Validate required fields
+  if (!name || !email || !message) {
+    return res.status(400).json({ message: 'Missing required fields' });
+  }
+
   // Configure nodemailer to use your Gmail account
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASSWORD,
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASSWORD,
     },
   });
 
