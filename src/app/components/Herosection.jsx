@@ -96,10 +96,10 @@ const Herosection = () => {
                         </Link>
                     </div>
                     <div class="relative xl:inline-block space-y-2">
-                        <button class="bg-black text-white w-full p-3 font-semibold hover:shadow-blue-500/50 shadow-2xl delay-200">Download
+                        <button class="font-semibold bg-blue-500 text-black w-full p-3 hover:bg-blue-300">Download
                             Cv
                         </button>
-                        <button class="bg-green-600 w-full p-3 font-semibold hover:shadow-green-500/50 shadow-2xl delay-200">
+                        <button class="font-semibold bg-green-500 text-black w-full p-3 hover:bg-green-300 shadow-2xl">
                             <Link href="http://wa.me/6287733839260">Contact Me</Link>
                         </button>
                     </div>

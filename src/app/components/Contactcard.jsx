@@ -90,18 +90,18 @@ const ContactCard = () => {
                     <div>
                         <button
                             type="submit"
-                            className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600"
+                            className="bg-green-500 text-black w-full p-3 hover:bg-green-300 shadow-2xl"
                         >
                             Send Message on WhatsApp
                         </button>
-                    </div>
+                    </div>   
                 </div>
             </form>
             {notification.show && (
                 <div
                     className={`mt-4 p-4 ${
                         notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'
-                    } text-white rounded-md`}
+                    } text-white rounded-sm`}
                 >
                     {notification.message}
                 </div>
