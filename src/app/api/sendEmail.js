@@ -1,7 +1,16 @@
 // api/sendEmail.js
-const nodemailer = require('nodemailer');
+import Cors from 'cors';
+import nodemailer from 'nodemailer';
+
+// Initialize the cors middleware
+const cors = Cors({
+  methods: ['POST'],
+});
 
 export default async function handler(req, res) {
+  // Use the middleware
+  await cors(req, res);
+
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
@@ -38,9 +47,16 @@ export default async function handler(req, res) {
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
 
-  // Send the email
   try {
+    // Log before sending
+    console.log('Sending email:', mailOptions);
+
+    // Send the email
     await transporter.sendMail(mailOptions);
+
+    // Log after sending
+    console.log('Email sent successfully');
+
     return res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
