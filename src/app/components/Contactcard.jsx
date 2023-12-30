@@ -27,6 +27,15 @@ const ContactCard = () => {
                 type: 'error',
                 message: 'Please fill in all required fields',
             });
+
+            setTimeout(() => {
+                setNotification({
+                    show: false,
+                    type: 'error',
+                    message: '',
+                });
+            }, 5000);
+    
             return;
         }
 
@@ -62,7 +71,7 @@ const ContactCard = () => {
     };
 
     return (
-        <div className="mx-auto p-10 bg-gray-800 rounded-xl">
+        <div className="mx-auto p-10 bg-gray-800">
             <form onSubmit={handleSubmit}>
                 <div className="space-y-4">
                     <div>
@@ -90,7 +99,7 @@ const ContactCard = () => {
                     <div>
                         <button
                             type="submit"
-                            className="bg-green-500 text-black w-full p-3 hover:bg-green-300 shadow-2xl"
+                            className="bg-green-500 text-white w-full p-3 hover:bg-green-700 shadow-2xl"
                         >
                             Send Message on WhatsApp
                         </button>
@@ -99,9 +108,9 @@ const ContactCard = () => {
             </form>
             {notification.show && (
                 <div
-                    className={`mt-4 p-4 ${
+                    className={`mt-4 p-3 ${
                         notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'
-                    } text-white rounded-sm`}
+                    } text-white`}
                 >
                     {notification.message}
                 </div>
