@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Aboutcard = () => {
@@ -43,24 +44,29 @@ const Aboutcard = () => {
                     {section === 'skill' && (
                       <>
                         I am a full stack web developer with a passion for creating interactive
-                        and responsive web applications. I have experience working with JavaScript,
-                        React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git.
+                        and responsive web applications. I have experience working with Laravel,
+                        Tailwind, Node.js, Express, MySQL, HTML, CSS, and Git.
                         I am a quick learner and I am always looking to expand my knowledge and skill set.
                         I am a team player and I am excited to work with others to create amazing applications.
                       </>
                     )}
                     {section === 'education' && (
                       <>
-                        I completed my Bachelors degree in Computer Science from XYZ University.
+                        I undergraduate my Bachelors degree in Informatics Engineering from University Islam Sultan Agung Indonesia.
                         I also pursued additional courses in web development and gained hands-on experience
                         in various technologies.
                       </>
                     )}
                     {section === 'certificate' && (
                       <>
-                        I earned certifications in advanced web development and software engineering.
+                        I earned certifications in advanced web development and.
                         These certifications showcase my commitment to staying updated with the latest
-                        technologies and best practices in the field.
+                        technologies and best practices in the field.U can check my certificate on my Linkedin.
+                        <>
+                          <Link className='text-emerald-600' href="https://www.linkedin.com/in/afywahyu/">Here</Link>
+                        </>
+
+
                       </>
                     )}
                   </p>

@@ -15,7 +15,8 @@ const ProjectCard = ({ title, imageSrc, technologies, description }) => {
       <h1 className="font-semibold text-2xl">{title}</h1>
       <p className="text-emerald-600 line-clamp-1">{technologies}</p>
       <p className="text-left font-light line-clamp-2 max-w-xs">{description}</p>
-      <Learnmorebtn />
+      
+      <Learnmorebtn title={title} technologies={technologies} description={description} />
     </div>
   );
 };
@@ -25,14 +26,14 @@ const ProjectCardList = () => {
     {
       title: 'Information System',
       imageSrc: '/images/Dinkes-Project.png',
-      technologies: 'Laravel-Tailwind-Jquery-Docker',
-      description: 'Your description here...',
+      technologies: 'Laravel-Tailwind-Jquery-Docker-Mysql',
+      description: 'Information system website for Dinas Kesehatan Kota Semarang.Build with laravel full stack framework and tailwind for the front end.This web for manage employee and make work letter for the employee.',
     },
     {
       title: 'Portfolio Website',
       imageSrc: '/images/Portfolio.png',
-      technologies: 'NextJs-Javascript-Typescript-Tailwind',
-      description: 'Your description here...',
+      technologies: 'NextJs-Javascript-Typescript-Tailwind-FramerMotion',
+      description: 'Portfolio website for review my project.This website build with NextJs,Tailwind,And FramerMotion.',
     },
     {
       title: 'Portfolio Website',
