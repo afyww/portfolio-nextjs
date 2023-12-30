@@ -13,12 +13,20 @@ export default async function handler(req, res) {
     return res.status(400).json({ message: 'Missing required fields' });
   }
 
+  // Retrieve environment variables
+  const { GMAIL_USER, GMAIL_PASSWORD } = process.env;
+
+  // Validate existence of environment variables
+  if (!GMAIL_USER || !GMAIL_PASSWORD) {
+    return res.status(500).json({ message: 'Gmail credentials not provided' });
+  }
+
   // Configure nodemailer to use your Gmail account
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASSWORD,
+      user: GMAIL_USER,
+      pass: GMAIL_PASSWORD,
     },
   });
 
