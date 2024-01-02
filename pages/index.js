@@ -1,4 +1,4 @@
-"use client";
+import { Poppins } from "next/font/google";
 import Contactsection from "./components/Contactsection";
 import Aboutsection from "./components/Aboutsection";
 import Herosection from "./components/Herosection";
@@ -16,9 +16,14 @@ const commonMotionProps = {
   transition: { duration: 1.0, ease: "easeInOut" },
 };
 
+const poppins = Poppins({
+  subsets: ["devanagari"],
+  weight: ["200", "400", "600", "800"],
+});
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-gradient-to-b from-gray-700 to-gray-900 flex-col">
+    <main className={`flex min-h-screen bg-gradient-to-b from-gray-700 to-gray-900 flex-col ${poppins.className}`}>
       <Navbar />
       <div className="max-w-full sm:max-w-full md:max-w-2xl xl:max-w-7xl 2xl:w-full mx-auto p-3 space-y-5">
         <motion.div {...commonMotionProps}>
