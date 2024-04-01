@@ -1,6 +1,5 @@
-
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Aboutcard = () => {
   const sections = ['skill', 'education', 'certificate'];

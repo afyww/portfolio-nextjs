@@ -1,5 +1,4 @@
-// Learnmorebtn.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Learnmorebtn = ({ title, description, technologies }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);

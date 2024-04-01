@@ -21,7 +21,7 @@ const Contactsection = () => {
                     </h1>
                 </div>
                 <div class="md:my-auto xl:my-auto">
-                   <Contactcard />
+                    <Contactcard />
                 </div>
             </div>
         </section >

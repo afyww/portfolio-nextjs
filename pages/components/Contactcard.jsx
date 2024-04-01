@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ContactCard = () => {
     const [formData, setFormData] = useState({
@@ -20,7 +20,6 @@ const ContactCard = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validate form data
         if (!formData.name || !formData.message) {
             setNotification({
                 show: true,
