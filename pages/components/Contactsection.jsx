@@ -1,4 +1,3 @@
-import React from 'react'
 import TypewriterComponent from 'typewriter-effect';
 import Contactcard from './Contactcard';
 

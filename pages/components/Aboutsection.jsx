@@ -1,4 +1,3 @@
-import React from 'react'
 import Aboutcard from './Aboutcard'
 import TypewriterComponent from 'typewriter-effect';
 
